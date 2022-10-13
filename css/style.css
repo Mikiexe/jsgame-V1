@@ -1,0 +1,217 @@
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+
+    padding: 0;
+    margin: 0;
+
+    align-items: center;
+    justify-content: center;
+
+}
+
+.general-backpack {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+
+    width: 60em;
+    height: 30em;
+
+    background-color: whitesmoke;
+    border: 1px solid black;
+}
+
+.backpack-backpack {
+    display: flex;
+
+    height: 25em;
+    width: 38em;
+
+    background-color: blue;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.location-backpack {
+    position: relative;
+
+    width: 23em;
+    height: 23em;
+    background-color: violet;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.backpack-superior {
+
+    position: absolute;
+    top: 4em;
+    left: 6.5em;
+    z-index: 1;
+
+    border-radius: 40% 40% 0 0;
+    /* border-top: 1px solid black; */
+    border-top: 1px solid black;
+    width: 10em;
+    height: 12em;
+    background-color: white;
+}
+
+#backpack-slot-1 {
+    position: absolute;
+    width: 10em;
+    height: 7em;
+
+    left: 6.5em;
+    top: 10em;
+    z-index: 1;
+
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+#backpack-slot-2 {
+    position: absolute;
+    width: 6em;
+    height: 6em;
+
+    left: 8.5em;
+    top: 9.5em;
+    z-index: 2;
+
+    border-radius: 100%;
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+#backpack-slot-3 {
+    position: absolute;
+    width: 2em;
+    height: 3em;
+
+    left: 15.5em;
+    top: 12em;
+
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+#backpack-slot-4 {
+    position: absolute;
+    width: 2em;
+    height: 3em;
+
+    left: 5.5em;
+    top: 12em;
+
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+#backpack-slot-5 {
+
+    position: absolute;
+    width: 12em;
+    height: 2.5em;
+    z-index: 1;
+
+    left: 5.5em;
+    top: 16em;
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+#slot-hovered-on-1 {
+
+    position: absolute;
+    width: 10em;
+    height: 7em;
+
+    z-index: 1;
+    left: 6.5em;
+    top: 10em;
+
+    background-color: blue;
+}
+
+#slot-hovered-on-2 {
+    position: absolute;
+    left: 8.5em;
+    top: 9.5em;
+    z-index: 2;
+    border-radius: 100%;
+    width: 6em;
+    height: 6em;
+    background-color: blue;
+}
+
+#slot-hovered-on-3 {
+    position: absolute;
+    width: 2em;
+    height: 3em;
+
+    left: 15.5em;
+    top: 12em;
+    background-color: blue;
+}
+
+#slot-hovered-on-4 {
+    position: absolute;
+    width: 2em;
+    height: 3em;
+
+    left: 5.5em;
+    top: 12em;
+    background-color: blue;
+}
+
+#slot-hovered-on-5 {
+    position: absolute;
+    width: 12em;
+    height: 2.5em;
+    z-index: 1;
+
+    left: 5.5em;
+    top: 16em;
+    background-color: blue;
+}
+
+
+
+/* BUTTONS SECTION */
+
+
+.buttons-backpack {
+
+    display: flex;
+    flex-direction: column;
+    margin-right: 1em;
+
+    height: 27em;
+    width: 18em;
+
+    background-color: brown;
+}
+
+.button {
+
+    margin: auto;
+    width: 15em;
+    height: 3em;
+    background-color: rgb(0, 255, 255);
+
+}
+
+
+
+.button:hover {
+    background-color: rgba(0, 255, 255, 0.2);
+}
