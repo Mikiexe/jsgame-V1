@@ -33,6 +33,9 @@
             <div class="botonesMainMenu" onclick="goTo('mainMenu', 'juegoNuevo')">
                 <p>Volver al menú</p>
             </div>
+            <div class="botonesMainMenu" onclick="goTo('backpack-window', 'juegoNuevo')">
+                <p>Prueba el backpack!</p>
+            </div>
         </div>
     </div>
 
@@ -48,15 +51,10 @@
     </div>
 
 
-
-
-
-
-
-
-
-    <!--
-    <div class="display-off" id="backpack-window">
+    <div id="backpack-window">
+        <div class="botonesMainMenu" onclick="goTo('juegoNuevo', 'backpack-window')">
+            <p>Vuelve al menú</p>
+        </div>
         <div class="general-backpack">
             <div class="buttons-backpack">
 
@@ -76,7 +74,7 @@
                 <div id="button4" class="button" onmouseover="hoverSlot('backpack-slot-4', 'slot-hovered-on-4')"
                     onmouseleave="unHoverSlot('slot-hovered-on-4', 'backpack-slot-4')">
                 </div>
-                
+
                 <div id="button5" class="button" onmouseover="hoverSlot('backpack-slot-5', 'slot-hovered-on-5')"
                     onmouseleave="unHoverSlot('slot-hovered-on-5', 'backpack-slot-5')">
                 </div>
@@ -93,7 +91,7 @@
             </div>
         </div>
     </div>
--->
+
 
     <script src="./js/main.js"></script>
 </body>
