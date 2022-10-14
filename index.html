@@ -2,40 +2,98 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Document</title>
 </head>
 
 <body>
-
-    <div class="general-backpack">
-        <div class="buttons-backpack">
-            <div id="button1" class="button" onmouseover="hoverSlot('backpack-slot-1', 'slot-hovered-on-1')"
-                onmouseleave="unHoverSlot('slot-hovered-on-1', 'backpack-slot-1')"></div>
-            <div id="button2" class="button" onmouseover="hoverSlot('backpack-slot-2', 'slot-hovered-on-2')"
-                onmouseleave="unHoverSlot('slot-hovered-on-2', 'backpack-slot-2')"></div>
-            <div id="button3" class="button" onmouseover="hoverSlot('backpack-slot-3', 'slot-hovered-on-3')"
-                onmouseleave="unHoverSlot('slot-hovered-on-3', 'backpack-slot-3')"></div>
-            <div id="button4" class="button" onmouseover="hoverSlot('backpack-slot-4', 'slot-hovered-on-4')"
-                onmouseleave="unHoverSlot('slot-hovered-on-4', 'backpack-slot-4')"></div>
-            <div id="button5" class="button" onmouseover="hoverSlot('backpack-slot-5', 'slot-hovered-on-5')"
-                onmouseleave="unHoverSlot('slot-hovered-on-5', 'backpack-slot-5')"></div>
+    <div id="mainMenu">
+        <div id="titleBox">
+            <h1>Dungeon Survive</h1>
         </div>
-        <div class="backpack-backpack">
-            <div class="location-backpack">
-                <div class="backpack-superior"></div>
-                <div id="backpack-slot-1"></div>
-                <div id="backpack-slot-2"></div>
-                <div id="backpack-slot-3"></div>
-                <div id="backpack-slot-4"></div>
-                <div id="backpack-slot-5"></div>
+        <div id="selector">
+            <div class="botonesMainMenu" onclick="goTo('juegoNuevo', 'mainMenu')">
+                <p>Partida nueva</p>
+            </div>
+            <div class="botonesMainMenu" onclick="goTo('ajustes', 'mainMenu')">
+                <p>Ajustes</p>
+            </div>
+            <div class="botonesMainMenu"></div>
+            <div class="botonesMainMenu"></div>
+            <div class="botonesMainMenu"></div>
+        </div>
+    </div>
+
+
+    <div id="juegoNuevo">
+        <div class="selectorJuegoNuevo">
+            <div class="botonesMainMenu" onclick="goTo('mainMenu', 'juegoNuevo')">
+                <p>Volver al menú</p>
             </div>
         </div>
     </div>
 
+
+
+    <div id="ajustes">
+        <div class="ajustesNav">
+            <div class="botonesMainMenu" onclick="goTo('mainMenu', 'ajustes')">
+                <p>Volver al menú</p>
+            </div>
+        </div>
+        .
+    </div>
+
+
+
+
+
+
+
+
+
+    <!--
+    <div class="display-off" id="backpack-window">
+        <div class="general-backpack">
+            <div class="buttons-backpack">
+
+                <div id="button1" class="button" onmouseover="hoverSlot('backpack-slot-1', 'slot-hovered-on-1')"
+                    onmouseleave="unHoverSlot('slot-hovered-on-1', 'backpack-slot-1')">
+                </div>
+
+                <div id="button2" class="button" onmouseover="hoverSlot('backpack-slot-2', 'slot-hovered-on-2')"
+                    onmouseleave="unHoverSlot('slot-hovered-on-2', 'backpack-slot-2')">
+                </div>
+
+
+                <div id="button3" class="button" onmouseover="hoverSlot('backpack-slot-3', 'slot-hovered-on-3')"
+                    onmouseleave="unHoverSlot('slot-hovered-on-3', 'backpack-slot-3')">
+                </div>
+
+                <div id="button4" class="button" onmouseover="hoverSlot('backpack-slot-4', 'slot-hovered-on-4')"
+                    onmouseleave="unHoverSlot('slot-hovered-on-4', 'backpack-slot-4')">
+                </div>
+                
+                <div id="button5" class="button" onmouseover="hoverSlot('backpack-slot-5', 'slot-hovered-on-5')"
+                    onmouseleave="unHoverSlot('slot-hovered-on-5', 'backpack-slot-5')">
+                </div>
+            </div>
+            <div class="backpack-backpack">
+                <div class="location-backpack">
+                    <div class="backpack-superior"></div>
+                    <div id="backpack-slot-1"></div>
+                    <div id="backpack-slot-2"></div>
+                    <div id="backpack-slot-3"></div>
+                    <div id="backpack-slot-4"></div>
+                    <div id="backpack-slot-5"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
 
     <script src="/js/main.js"></script>
 </body>
