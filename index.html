@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <title>Document</title>
 </head>
 
@@ -21,9 +23,16 @@
             <div class="botonesMainMenu" onclick="goTo('ajustes', 'mainMenu')">
                 <p>Ajustes</p>
             </div>
-            <div class="botonesMainMenu"></div>
-            <div class="botonesMainMenu"></div>
-            <div class="botonesMainMenu"></div>
+            <div class="botonesMainMenu">
+                <p>Ayuda</p>
+            </div>
+            <div class="botonesMainMenu">
+                <p>Creditos</p>
+            </div>
+
+            <div class="botonesMainMenu">
+                <p>Salir</p>
+            </div>
         </div>
     </div>
 
@@ -43,11 +52,28 @@
 
     <div id="ajustes">
         <div class="ajustesNav">
-            <div class="botonesMainMenu" onclick="goTo('mainMenu', 'ajustes')">
+            <!-- <div class="botonesMainMenu" onclick="goTo('mainMenu', 'ajustes')">
                 <p>Volver al menú</p>
+            </div> -->
+            <div class="ajustesPrincipales">
+                <div class="volumeAdjust">
+                    <div class="substractVolume" onclick="volumeChanger(volumeSubstract)">
+                        <p> &lt; </p>
+                    </div>
+                    <div id="volumeElements" class="volumeLevel">
+
+                    </div>
+                    <div class="addVolume" onclick="volumeChanger(volumeAdd)">
+                        <p> &gt; </p>
+                    </div>
+                </div>
+                <div class="graphxAdjust">
+                    LOW: <input type="checkbox">
+                    MEDIUM: <input type="checkbox">
+                    HIGH: <input type="checkbox">
+                </div>
             </div>
         </div>
-        .
     </div>
 
 
@@ -93,7 +119,15 @@
     </div>
 
 
+    <!-- <iframe src="/audio/dungeon_ambient_1.ogg" allow="autoplay" id="audio" style="display: none"></iframe> -->
+
+    <audio id="musicaInicial" loop>
+        <source src="/audio/dungeon_ambient_1.ogg" type="audio/ogg">
+    </audio>
+
+
     <script src="./js/main.js"></script>
+    <script src="./js/divSwitcher.js"></script>
 </body>
 
 </html>
